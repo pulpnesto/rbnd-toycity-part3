@@ -21,6 +21,11 @@ class Product
 		end
 	end
 
+	def self.in_stock
+		in_stock_products = []
+		in_stock_products = @@products.select {|product| product.in_stock? }
+	end
+
 	def duplicate?
 		check = []
 		check = @@products.select{|product|	product.title == self.title}
@@ -29,6 +34,10 @@ class Product
 		else
 			raise DuplicateProductError, "#{title} already exists."
 		end
+	end
+
+	def in_stock?
+		@stock > 0
 	end
 
 	private
