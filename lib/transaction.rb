@@ -1,5 +1,5 @@
 class Transaction
-	attr_reader :customer, :product, :id
+	attr_reader :customer, :product, :id, :date
 	@@id = 1
 	@@transactions = []
 
@@ -9,6 +9,7 @@ class Transaction
 		@id = @@id
 		@@id += 1
 		@product.stock -= 1
+		@date = Time.now
 		add_transaction
 	end
 
@@ -22,6 +23,11 @@ class Transaction
 				return transaction
 			end
 		end
+	end
+
+	## Find transactions by customer
+	def self.find_transactions_by_customer(customer_to_search)
+		transaction_array = @@transactions.select{|transaction| transaction.customer == customer_to_search}
 	end
 
 	private

@@ -56,6 +56,9 @@ puts nanoblock.stock # Should return 11
 
 # PURCHASES
 
+## Sleep 1 second to break up the two transactions
+sleep(1)
+
 puts walter.purchase(nanoblock)
 
 puts Transaction.all.count # Should return 2
@@ -65,3 +68,5 @@ puts transaction2.product == nanoblock # Should return true
 
 #walter.purchase(firehouse)
 # Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
+
+walter.list_products_purchased
