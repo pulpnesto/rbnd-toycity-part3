@@ -41,6 +41,25 @@ class Product
 		@stock > 0
 	end
 
+	def restock(amount)
+		unless in_stock?
+			@stock = amount
+		end
+	end
+
+	def list_customers_by_product
+		transactions = Transaction.find_transactions_by_object(self)
+		unless transactions.nil?
+			puts "--------------------------------------------------------------------"
+			puts "Customers who bought #{@title}   |  Price  |  Date"
+			puts "--------------------------------------------------------------------"
+			transactions.each do |transaction|
+				puts "#{transaction.customer.name} | #{transaction.product.price} | #{transaction.date}"
+			end
+			puts ""
+		end
+	end
+
 	private
 
 		def add_product

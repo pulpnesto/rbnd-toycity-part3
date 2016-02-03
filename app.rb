@@ -56,7 +56,7 @@ puts nanoblock.stock # Should return 11
 
 # PURCHASES
 
-## Sleep 1 second to break up the two transactions
+## Sleep 1 second to break up Walter's two nanoblock transactions
 sleep(1)
 
 puts walter.purchase(nanoblock)
@@ -69,4 +69,15 @@ puts transaction2.product == nanoblock # Should return true
 #walter.purchase(firehouse)
 # Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
 
+## Test new feature list_products_purchased
 walter.list_products_purchased
+
+firehouse.restock(100)
+puts firehouse.in_stock?
+puts firehouse.stock
+puts walter.purchase(firehouse)
+puts firehouse.stock
+walter.list_products_purchased
+nanoblock.list_customers_by_product
+firehouse.list_customers_by_product
+

@@ -38,13 +38,15 @@ class Customer
 	end
 
 	def list_products_purchased
-		transactions = Transaction.find_transactions_by_customer(self)
-		unless transactions.empty?
-			puts "Product(s) purchased by #{@name} |  Price  |  Date"
-			puts "---------------------------------------------------------------"
+		transactions = Transaction.find_transactions_by_object(self)
+		unless transactions.nil?
+			puts "--------------------------------------------------------------------"
+			puts "Product(s) purchased by #{@name}   |  Price  |  Date"
+			puts "--------------------------------------------------------------------"
 			transactions.each do |transaction|
 				puts "#{transaction.product.title} | #{transaction.product.price} | #{transaction.date}"
 			end
+			puts ""
 		end
 	end
 

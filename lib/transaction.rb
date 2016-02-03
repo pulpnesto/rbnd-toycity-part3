@@ -26,9 +26,18 @@ class Transaction
 	end
 
 	## Find transactions by customer
-	def self.find_transactions_by_customer(customer_to_search)
-		transaction_array = @@transactions.select{|transaction| transaction.customer == customer_to_search}
+
+	def self.find_transactions_by_object(object_to_search)
+		transaction_array = []
+		if object_to_search.class == Product
+			transaction_array = @@transactions.select{|transaction| transaction.product == object_to_search}
+		end
+		if object_to_search.class == Customer
+			transaction_array = @@transactions.select{|transaction| transaction.customer == object_to_search}
+		end
+		transaction_array
 	end
+
 
 	private
 
