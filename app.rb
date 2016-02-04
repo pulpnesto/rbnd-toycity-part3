@@ -36,6 +36,7 @@ Customer.new(name: "Julia Van Cleve")
 
 puts Customer.all.count # Should return 2
 
+## Commented out line below to run file. Uncomment it to see proper error is raised.
 # Customer.new(name: "Walter Latimer")
 # Should return DuplicateCustomerError: 'Walter Latimer' already exists.
 
@@ -66,18 +67,28 @@ puts Transaction.all.count # Should return 2
 transaction2 = Transaction.find(2)
 puts transaction2.product == nanoblock # Should return true
 
+## Commented out line below to run file. Uncomment it to see proper error is raised.
 #walter.purchase(firehouse)
 # Should return OutOfStockError: 'LEGO Firehouse Headquarter' is out of stock.
 
-## Test new feature list_products_purchased
+
+## NEW FEATURES ###
+
+## Show products and time product purchased for a user. (New Feature #1)
 walter.list_products_purchased
 
+## Use new method to restock empty products
 firehouse.restock(100)
-puts firehouse.in_stock?
 puts firehouse.stock
+
+## Once firehouse is stocked, user purchases one
 puts walter.purchase(firehouse)
 puts firehouse.stock
+
+## Again show list of procucts purchase by user to show different products
 walter.list_products_purchased
+
+## Show lits of customers that bought a particular product. (New Feature #2)
 nanoblock.list_customers_by_product
 firehouse.list_customers_by_product
 
