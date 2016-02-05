@@ -1,0 +1,89 @@
+commit 30d47468621f4e4598c4ee3764f3da91c786154c
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Thu Feb 4 18:28:38 2016 -0700
+
+    Add reflections.txt to project files
+
+commit 0f145ba0c29f14f8d1d1082b6883ca287fde831b
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Wed Feb 3 23:10:45 2016 -0700
+
+    Comment ruby files
+
+commit 296db2c199b9a595e13b5f43a9f52d93b35f6044
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Tue Feb 2 22:40:56 2016 -0700
+
+    Add restock method and list_customers_by_product method in Product class.
+
+commit 4cae34e4e7ed3345e7ab2cb4a74f9b5c4a459763
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Tue Feb 2 21:46:13 2016 -0700
+
+    Add new feature to list customer's purchases with price and date stamp
+
+commit 13b452d1e3e832bcc200051f9ea10db972f959d8
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Mon Feb 1 22:21:31 2016 -0700
+
+    Create Transaction class to link customer purchases of products.
+
+commit 46b578d8e34658b3564e96ebfb0eb7f956f5555a
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Mon Feb 1 21:52:29 2016 -0700
+
+    Create Customer class with initialization, search by name and duplicate check/raise error.
+
+commit 46a51477c6ef7de40edb8acb8a3ffc78774eb13e
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Mon Feb 1 21:35:59 2016 -0700
+
+    Add methods to return products in stock
+
+commit d1413b28d4c7729f44e9ece8af1c674c48feb686
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Mon Feb 1 21:22:12 2016 -0700
+
+    Create find_by_title method and throw err when duplicates detected
+
+commit 2fbfe0fe2b7bcea0d51320a1374452258909d4f5
+Author: pulpnesto <pulp.nesto@gmail.com>
+Date:   Mon Feb 1 19:11:20 2016 -0700
+
+    Add ability to create and count products
+
+commit 14c21e10423a3f57bf17931b8ccdd803e240d5d1
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Tue Jan 12 01:23:47 2016 -0800
+
+    Output return values to the command line
+
+commit 50ecd4c9f92a4a76d414cb22a39a25c34e902525
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Fri Jan 8 12:02:31 2016 -0800
+
+    Removed zip file requirement
+
+commit f500dd1d9d903c1b9d49b3c9665f6a011616c546
+Author: Julia Van Cleve <julia@jmv.me>
+Date:   Thu Jan 7 09:04:43 2016 -0800
+
+    Fixed typo
+
+commit 1557be82014b78b0773f8f7bc129712e3a324286
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Wed Jan 6 02:17:14 2016 -0500
+
+    Fix typos
+
+commit ec4113db8edbd9c69e15dc85b21875c3472ca3fa
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Tue Jan 5 23:12:59 2016 -0500
+
+    Add LICENSE
+
+commit 1e66c23ba283ea433767f58d9a9e796282046d5c
+Author: Walter Latimer <walter@walterlatimer.com>
+Date:   Tue Jan 5 23:09:18 2016 -0500
+
+    Initial commit
