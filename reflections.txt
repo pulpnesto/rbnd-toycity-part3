@@ -1,0 +1,19 @@
+How long did you spend working on this project?
+
+	I spent about 6 hours on this project.
+
+
+
+What was the most rewarding challenge you conquered?
+
+	My limited real programming experience is with Python and I only used it to write simple scripts. I knew about OOP, but in more of an abstract sense. This class is the first formal use of OOP that I have used and I think it's awesome. Once I got my head around the concept (with this projcet and the udacitask one, it sort of clicked as to how OOP works together. So cool. Makes visualizing the construction of a program much easier than a bunch of methods in a file (like my Python scripts or even the first two Toy City projects). Anyway, I haven't "conquered" OOP but I do have a better grasp of it than I did before.
+
+What two additional features did you build? Why?
+
+	The two new features are similar, one is to list/print all of the products as specific user has purchased and the other new feature is to list/print all of the customers that bought a certain product. The reason was to be able to make a manifest or receipt system that you could quickly summarize the data. In order augment the two new features I also added a restocking method that allows a product to be restocked if there aren't any left in the inventory. And lastly I added a date instance variable that is set when a transaction is made (to show up on the manifests/receipts created by my two new features).
+
+
+
+Where do you still have room to grow?
+
+	I have an assortment of areas I need to improve/grow on...but I'm really digging the OOP part of programming and want to learn and try out as much as I can on this part of the course. I know it's a massive topic but...baby steps!
